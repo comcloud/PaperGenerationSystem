@@ -1,0 +1,10 @@
+server:
+  port: 8081
+mybatis:
+  mapper-locations: classpath/mapper/*.xml
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/generator?serverTimezone=GMT%2B8amp;characterEncoding=utf-8
+    data-username: root
+    data-password: naonao
+    driver-class-name: com.mysql.cj.jdbc.Driver

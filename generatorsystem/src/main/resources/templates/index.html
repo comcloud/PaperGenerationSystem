@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>教师信息录入</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="/css/login.css">
+</head>
+<body>
+<!-- particles.js container -->
+<div id="/js/particles-js" style="display: flex;align-items: center;justify-content: center">
+</div> 
+<div class="login-page">
+   <div class="login-content">
+	<form action="/getTeacherData" method="post" enctype="multipart/form-data">
+     <div class="login-tit">教师信息管理系统</div>
+     <div class="login-input">
+       <input type="text" name="name" placeholder="姓名">
+     </div>
+	 <div class="login-input">
+	   <input type="text" name="department" placeholder="所属系部">
+	 </div>
+     <div class="login-input">
+      <input type="tel" name="tel" placeholder="电话">
+    </div>
+	<div class="login-input">
+	  <input type="email" name="mail" placeholder="邮箱">
+	</div>
+	</form>
+    <div class="login-btn">
+      <div class="login-btn-left">
+		<input type="button" style="background:lightslategrey; width: 100px; height: 40px;" value="单个录入" />
+      </div>
+		  <div class="login-btn-right">
+		    <input type="button" style="background:lightslategrey;  width: 100px; height: 40px;" value="批量录入" />
+		  </div>
+	        </div>
+	 
+    </div>
+   </div>
+</div>
+
+
+<!-- scripts -->
+<script src="/js/particles.js"></script>
+<script src="/js/app.js"></script>
+<script>
+  function changeImg(){
+    let pic = document.getElementById('picture');
+    console.log(pic.src)
+    if(pic.getAttribute("src",2) =="img/check.png"){
+      pic.src ="img/checked.png"
+    }else{
+      pic.src ="img/check.png"
+    }
+  }
+</script>
+</body>
+</html>
